@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Display GitHub Image</title>
+</head>
+<body>
+    <h1>Image from GitHub Repository</h1>
+    <!-- Replace with your actual raw GitHub image URL -->
+    <img src="https://raw.githubusercontent.com/username/repo/branch/images/myimage.png" 
+         alt="My GitHub Image" 
+         width="400" 
+         height="auto">
+</body>
+</html>
