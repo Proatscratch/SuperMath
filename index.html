@@ -9,7 +9,26 @@
     <img src="https://github.com/Proatscratch/SuperMath/blob/main/puzzle_2.png?raw=true" 
          alt="My GitHub Image" 
          width="1500" 
-         height="auto">
+         height="auto"
+        id="image">
 <h1> Hello! Welcome to my website! Email sjacklasty@gmail.com if you have any questions! </h1>
+<div>Use this Input box to search up a question set. To look for a hard one, type HARD_[id number]. Regular Puzzles are added daily, to access them simply type their ID number!</div>
+<input type="text" id="userInput" placeholder="ID">
+
+<script>
+    const inputField = document.getElementById('userInput');
+const button = document.getElementById('submitBtn');
+const resultParagraph = document.getElementById('result');
+    const imageElement = document.getElementById('image');
+
+// 2. Add an event listener to the button
+button.addEventListener('click', function() {
+  // 3. Grab the current value of the input box
+  const currentText = inputField.value;
+  var web = "https://github.com/Proatscratch/SuperMath/blob/main/puzzle_" + currentText + "?raw=true";
+    imageElement.src = web;
+      
+});
+</script>
 </body>
 </html>
